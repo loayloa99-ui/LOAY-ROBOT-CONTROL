@@ -1,6 +1,9 @@
 name: Build LOAY ROBOT CONTROL APK
-on: workflow_dispatch: push: branches: - main
-jobs: build: runs-on: ubuntu-latest
+on:
+workflow_dispatch: push: branches: - main
+jobs:
+build:
+runs-on: ubuntu-latest
 steps:
   - name: Download project
     uses: actions/checkout@v4
